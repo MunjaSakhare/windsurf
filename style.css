@@ -1,0 +1,350 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "windsurf secondary";
+    src: url("https://windsurf.com/_next/static/media/13971731025ec697-s.p.woff2");
+}
+
+@font-face {
+    font-family: "windsurf primary";
+    src: url("3ecc75a922018515-s.p.woff2");
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #011c42;
+    height: 12vh;
+    align-items: center;
+    padding-left: 6vw;
+    font-family: "windsurf secondary";
+    /* font-size: 16px; */
+}
+
+.img-logo {
+    width: 160px;
+}
+
+header a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #ffffff33;
+
+}
+
+nav a i {
+    transition: all 0.15s ease-in-out;
+}
+
+nav a:hover i {
+    transform: rotate(180deg);
+}
+
+/* -------------------------------------------------------------------- */
+/* nav display */
+
+nav .link-1 {
+    position: relative;
+}
+
+nav .link-1 .box-1 {
+    position: absolute;
+    width: 530px;
+    height: 200px;
+    background-color: rgb(252, 242, 229);
+    top: 50px;
+    border-radius: 4px;
+    display: none;
+
+}
+
+/* a:hover */
+nav a:hover .box-1 {
+    padding: 8px;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+nav .link-1 .box-1 .box-1-left {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 242, 229);
+    border: 1px solid black;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+nav .link-1 .box-1 .box-1-left h3 {
+    color: #666;
+}
+
+nav .link-1 .box-1 .box-1-left span {
+    color: black;
+    line-height: 2.0;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+nav .link-1 .box-1 .box-1-left span p {
+    color: rgb(89, 89, 89);
+    font-size: 14px;
+}
+
+
+/* right side start*/
+nav .link-1 .box-1 .box-1-right {
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(252, 242, 229);
+    border: 1px solid black;
+    border-left: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-left: 20px;
+}
+
+
+nav .link-1 .box-1 .box-1-right h3 {
+    color: #666;
+}
+
+nav .link-1 .box-1 .box-1-right span {
+    color: black;
+    line-height: 2.0;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+nav .link-1 .box-1 .box-1-right span p {
+    color: rgb(89, 89, 89);
+    font-size: 14px;
+}
+
+/* right side end  */
+
+
+/* link-2 start */
+nav .link-2 {
+    position: relative;
+}
+
+nav .link-2 .box-2 {
+    position: absolute;
+    width: 375px;
+    height: 200px;
+    background-color: rgb(252, 242, 229);
+    top: 50px;
+    border-radius: 4px;
+    display: none;
+
+}
+
+/* a:hover */
+nav a:hover .box-2 {
+    padding: 8px;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+nav .link-2 .box-2 .box-2-left {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 242, 229);
+    border: 1px solid black;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+
+/* nav .link-2 .box-2 .box-2-left h3 {
+    color: #666;
+} */
+
+nav .link-2 .box-2 .box-2-left span {
+    color: black;
+    line-height: 2.0;
+    font-weight: 500;
+    font-size: 16px;
+
+
+}
+
+nav .link-2 .box-2 .box-2-left span p {
+    color: rgb(89, 89, 89);
+    font-size: 14px;
+}
+
+
+/* link-2 end */
+
+/* link-3 start */
+nav .link-3 {
+    position: relative;
+}
+
+nav .link-3 .box-3 {
+    position: absolute;
+    width: 210px;
+    height: 400px;
+    background-color: rgb(252, 242, 229);
+    top: 50px;
+    border-radius: 4px;
+    display: none;
+
+}
+
+/* a:hover */
+nav a:hover .box-3 {
+    padding: 8px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+nav .link-3 .box-3 .box-3-left {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 242, 229);
+    border: 1px solid black;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    color: #000000;
+    font-size: 14px;
+}
+
+/* link-3 end */
+
+/* link-4 start */
+
+nav .link-4 {
+    position: relative;
+}
+
+nav .link-4 .box-4 {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(252, 242, 229);
+    top: 50px;
+    border-radius: 4px;
+    display: none;
+
+}
+
+/* a:hover */
+nav a:hover .box-4 {
+    padding: 8px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+nav .link-4 .box-4 .box-4-left {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 242, 229);
+    border: 1px solid black;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    color: #000000;
+    font-size: 14px;
+}
+
+/* link-4 end */
+
+/* -------------------------------------------------------------------- */
+.user-logo {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 2px;
+}
+
+.user-logo-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* border: 2px solid #34e8bb; */
+    border: 2px solid transparent;
+    transition: border 0.15s ease-in-out;
+}
+
+.user-logo-border:hover {
+    border: 2px solid #34e8bb;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+}
+
+.download-bg {
+    display: flex;
+    background-color: #34e8bb;
+    padding: 0 40px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.download-btn {
+    color: black;
+    text-transform: uppercase;
+}
