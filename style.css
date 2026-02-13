@@ -391,19 +391,17 @@ main {
     background-color: #011c42;
     width: 100%;
     height: 88vh;
-    padding: 0 7vw;
-
     /* border: 2px solid red; */
 }
 
 .hero-section {
-    width: 100%;
     height: 100%;
     /* border: 2px solid red; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 64px 0 128px 0;
+    margin: 0 7%;
 
 }
 
@@ -528,7 +526,11 @@ header a .mobile-logo {
 
     main {
         height: 92vh;
-        padding: 0;
+    }
+
+    main .hero-section {
+        padding-top: 0;
+        margin: 0;
     }
 
     nav {
@@ -541,7 +543,7 @@ header a .mobile-logo {
     }
 
     .header-right .mobile-options {
-        background-color: var(--secondary-color);
+        background-color: #34e8bb;
         height: 100%;
         width: 8vh;
         display: flex;
@@ -556,6 +558,10 @@ header a .mobile-logo {
         font-size: 40px;
     }
 
+    .hero-content p {
+        font-size: 20px;
+    }
+
     .hero-buttons {
         display: flex;
         flex-direction: column;
@@ -568,3 +574,39 @@ header a .mobile-logo {
 }
 
 /* making responsive website end for mobile....... */
+
+/* marquee-section start ........................ */
+
+.marquee-section {
+    padding-top: 40px;
+    margin: 0;
+    /* border: 2px solid red; */
+    display: flex;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    height: 20vh;
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    animation: marquee-animation 28s linear infinite;
+
+}
+
+@keyframes marquee-animation {
+    from {
+        translate: 0%;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+.marquee-content img {
+    width: 80px;
+}
+
+/* marquee-section end .......................... */
