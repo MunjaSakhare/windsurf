@@ -14,6 +14,18 @@
     src: url("3ecc75a922018515-s.p.woff2");
 }
 
+::selection {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+:root {
+    --primary-color: #011c42;
+    --secondary-color: #4dedcd;
+    --font-primary: "Windsurf primary";
+    --font-secondary: "Windsurf secondary";
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -81,8 +93,14 @@ nav .link-1 .box-1 {
 
 }
 
+nav .hover-class {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+}
+
 /* a:hover */
-nav a:hover .box-1 {
+nav .hover-class:hover .box-1 {
     padding: 8px;
     justify-content: center;
     align-content: center;
@@ -176,7 +194,7 @@ nav .link-2 .box-2 {
 }
 
 /* a:hover */
-nav a:hover .box-2 {
+nav .hover-class:hover .box-2 {
     padding: 8px;
     justify-content: center;
     align-content: center;
@@ -236,7 +254,7 @@ nav .link-3 .box-3 {
 }
 
 /* a:hover */
-nav a:hover .box-3 {
+nav .hover-class:hover .box-3 {
     padding: 8px;
     display: grid;
     justify-content: center;
@@ -280,7 +298,7 @@ nav .link-4 .box-4 {
 }
 
 /* a:hover */
-nav a:hover .box-4 {
+nav .hover-class:hover .box-4 {
     padding: 8px;
     display: grid;
     justify-content: center;
@@ -305,12 +323,12 @@ nav .link-4 .box-4 .box-4-left {
 }
 
 
-@media (width <=1200px) {
+/* @media (width <=1200px) {
     nav {
         display: none;
     }
 
-}
+} */
 
 /* nav .link-4 .box-4:hover {
     display: block;
@@ -371,7 +389,7 @@ nav .link-4 .box-4 .box-4-left {
 /* main section start.............................. */
 main {
     background-color: #011c42;
-    width: 100vw;
+    width: 100%;
     height: 88vh;
     padding: 0 7vw;
 
@@ -413,11 +431,13 @@ main {
     gap: 16px;
 }
 
-.hero-buttons button {
+.hero-buttons .button {
     font-size: 18px;
     font-family: "windsurf secondary";
     border: none;
     font-weight: 500;
+    border-radius: 2px;
+
 }
 
 .hero-buttons .btn-1 {
@@ -441,7 +461,8 @@ main {
     align-items: center;
     background-color: #ffffff1a;
     color: #ffffff;
-    border: 1px solid transparent;
+    /* border: 1px solid #ffffff; */
+    box-shadow: 0 0 1px #ffffff;
     transition: border 1s ease-in-out;
 
 }
@@ -475,3 +496,75 @@ main {
 
 
 /* main section end.............................. */
+
+/* making responsive website start for mobile..... */
+
+header a .mobile-logo {
+    display: none;
+}
+
+@media (width<=1200px) {
+    header a .img-logo {
+        display: none;
+    }
+
+    header a .mobile-logo {
+        display: block;
+        width: 60px;
+    }
+
+
+}
+
+.header-right .mobile-options {
+    display: none;
+}
+
+@media (width <=1024px) {
+    header {
+        height: 8vh;
+        padding-left: 20px;
+    }
+
+    main {
+        height: 92vh;
+        padding: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .header-right .user-logo-border,
+    .download-bg {
+        display: none;
+    }
+
+    .header-right .mobile-options {
+        background-color: var(--secondary-color);
+        height: 100%;
+        width: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media (width<=768px) {
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .button {
+        width: 100%;
+    }
+}
+
+/* making responsive website end for mobile....... */
